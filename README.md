@@ -1,6 +1,18 @@
 # scsample
 
-build packages with
+##Publishing
+package and publish packages with
 ```bash
-> sbt +package +packageSrc
+> sbt +publish
+```
+
+### Autorisation
+append the following to your `~/.gitconfig`
+```
+[github]
+  user = <username>
+```
+append the following to your `~/.bash_profile`
+```
+export GITHUB_TOKEN=<token>
 ```
